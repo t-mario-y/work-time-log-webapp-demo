@@ -1,11 +1,11 @@
 # work-time-log-webapp-demo
-動作デモ:  
-https://work-time-log-webapp-demo.firebaseapp.com/
+### 動作デモ
+https://work-time-log-webapp-demo.firebaseapp.com/  
+クラウドDBとして[AirTable](https://airtable.com/)を使用しています
 
-使用技術:  
-[AirTable](https://airtable.com/)  
+### 使用ライブラリ
 [Bulma](https://bulma.io/)  
 [Vue.js](https://jp.vuejs.org/index.html)  
-[vuejs-datepicker](https://www.npmjs.com/package/vuejs-datepicker)  
 [axios](https://github.com/axios/axios)  
 [Moment.js](https://momentjs.com/)  
+[vuejs-datepicker](https://www.npmjs.com/package/vuejs-datepicker)  
