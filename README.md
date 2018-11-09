@@ -1,3 +1,3 @@
 # work-time-log-webapp-demo
-See Demo at:
+動作デモ:  
 https://work-time-log-webapp-demo.firebaseapp.com/
