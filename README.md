@@ -1,3 +1,3 @@
 # work-time-log-webapp-demo
-URLは下記:
-
+See Demo at:
+https://work-time-log-webapp-demo.firebaseapp.com/
