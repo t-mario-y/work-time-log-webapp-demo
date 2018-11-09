@@ -106,8 +106,8 @@ const vm = new Vue({
     },
     //Web APIへのアクセス
     select() {
-      const tenDaysBefore = moment(new Date())
-        .add(-10, "day")
+      const pastDaysCount = moment(new Date())
+        .add(-20, "day")
         .format("YYYY-MM-DD");
       axios
         .get(AIRTABLE_API_URI, {
@@ -117,7 +117,7 @@ const vm = new Vue({
           params: {
             maxRecords: 100,
             view: "Grid view",
-            filterByFormula: `IS_AFTER(date , '${tenDaysBefore}')`
+            filterByFormula: `IS_AFTER(date , '${pastDaysCount}')`,
           }
         })
         .then(response => {
@@ -135,7 +135,14 @@ const vm = new Vue({
             };
             tmpArray.push(tmp);
           });
-          this.workObjList = tmpArray;
+          //AirTableのAPIでSORTが効かないので代入時にソートする
+          this.workObjList = tmpArray.sort(function(a,b){
+            if(moment(a.date).isAfter(moment(b.date))){
+              return 1;
+            } else {
+              return -1;
+            }
+          });
         })
         .catch(error => {
           console.log(error);
