@@ -1,6 +1,10 @@
 # work-time-log-webapp-demo
+個人で使用している
+https://github.com/t-mario-y/work-time-log-webApp
+の動作デモ用
+
 ### 動作デモ
-https://work-time-log-webapp-demo.firebaseapp.com/  
+URL:https://work-time-log-webapp-demo.firebaseapp.com/  
 クラウドDBとして[AirTable](https://airtable.com/)を使用しています
 
 ### 使用ライブラリ
